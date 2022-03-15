@@ -24,8 +24,10 @@ const dataList: { [k: string]: any }[] = [
     number9,
 ];
 
+export type AnimatedNumberType = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
+
 interface AnimatedNumberProp {
-    number: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
+    number: AnimatedNumberType;
 }
 
 const AnimatedNumber: React.FC<AnimatedNumberProp> = ({ number }) => {
